@@ -1,4 +1,5 @@
-== Errata for "Gradle in Action"
+Errata for "Gradle in Action"
+=============================
 
 This is a compiled list of improvements to the content of the published book link:http://www.manning.com/muschko/["Gradle in Action"]. If you think a particular topic is not explained well enough or simply wrong, please post a message to the link:http://www.manning-sandbox.com/forum.jspa?forumID=849[author online forum].
 
