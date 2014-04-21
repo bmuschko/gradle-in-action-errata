@@ -1,0 +1,71 @@
+== Errata for "Gradle in Action"
+
+This is a compiled list of improvements to the content of the published book link:http://www.manning.com/muschko/["Gradle in Action"]. If you think a particular topic is not explained well enough or simply wrong, please post a message to the link:http://www.manning-sandbox.com/forum.jspa?forumID=849[author online forum].
+
+=== Page 46, section 2.6.4, last paragraph
+
+The runtime behavior of the Gradle daemon can be explained in more detail. The following paragraph is more explicit about its use from the command line:
+
+____
+Subsequent invocations of the `gradle` command will now reuse the daemon process. Give it a shot and try running `gradle groupTherapy --daemon`. Wow, you got your startup and execution time down to about one second! Keep in mind...
+____
+
+should be
+
+____
+Give it a shot and try running `gradle groupTherapy --daemon`. Wow, you got your startup and execution time down to about one second! Subsequent invocations of the `gradle` command will need to declare the `--daemon` option explicitly. In practice you might want to configure the daemon with the help of a system properties to reuse an already started daemon process. For more information on the daemon's configuration, check out the online documentation at http://www.gradle.org/docs/current/userguide/build_environment.html#sec:gradle_configuration_properties. Keep in mind...
+____
+
+=== Page 56, text paragraph
+
+____
+"As you provide any unit tests in..., Gradle happily moves on."
+____
+
+should be
+
+____
+"As you didn't provide any unit tests in..., Gradle happily moves on."
+____
+
+=== Page 56, command line output
+
+As the sample project doesn't provide any unit tests, the `reports` directory won't exist after running a full build.
+
+    .
+    ├── build
+    │   ├── classes
+    │   │   └── main
+    │   │       └── com
+    │   │           └── manning
+    │   │               └── gia
+    │   │                   └── todo
+    │   │                       ├── ToDoApp.class
+    │   │                       ├── model
+    │   │                       │   └── ToDoItem.class
+    │   │                       ├── repository
+    │   │                       │   ├── InMemoryToDoRepository.class
+    │   │                       │   └── ToDoRepository.class
+    │   │                       └── utils
+    │   │                           ├── CommandLineInput.class
+    │   │                           ├── CommandLineInputHandler$1.class
+    │   │                           └── CommandLineInputHandler.class
+    │   ├── dependency-cache
+    │   ├── libs
+    │   │   └── todo-app.jar
+    │   └── tmp
+    │       └── jar
+    │           └── MANIFEST.MF
+    ├── build.gradle
+    └── src
+    
+=== Page 225, first code snippet
+
+The class `AntBuilder` is an abstract class and therefore cannot be instantiated. To create an instance of type `AntBuilder` from a regular class, you will need to use
+an internal Gradle class. Usually, this is not recommended practice as the class or package might change with a later Gradle but at the moment that's the only option.
+
+    def ant = new org.gradle.api.AntBuilder()
+
+should be
+
+    def ant = new org.gradle.api.internal.project.DefaultAntBuilder()
