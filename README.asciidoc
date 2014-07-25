@@ -59,14 +59,25 @@ As the sample project doesn't provide any unit tests, the `reports` directory wo
     │           └── MANIFEST.MF
     ├── build.gradle
     └── src
+
+=== Page 155, first text paragraph
+
+____
+"In fact, it’s a build script itself that’s executed during the evaluation phase of the build lifecycle."
+____
+
+should be
+
+____
+"In fact, it’s a build script itself that’s executed during the initialization phase of the build lifecycle."
+____    
     
 === Page 225, first code snippet
 
-The class `AntBuilder` is an abstract class and therefore cannot be instantiated. To create an instance of type `AntBuilder` from a regular class, you will need to use
-an internal Gradle class. Usually, this is not recommended practice as the class or package might change with a later Gradle but at the moment that's the only option.
+The class `AntBuilder` is an abstract class and therefore cannot be instantiated. To create an instance of type `AntBuilder` from a regular class, you will need to use Groovy's `AntBuilder` implementation. Gradle's AntBuilder implementations aren't part of the public API. Using internal Gradle classes is not a recommended practice as the class or package might change with a later version of Gradle.
 
     def ant = new org.gradle.api.AntBuilder()
 
 should be
 
-    def ant = new org.gradle.api.internal.project.DefaultAntBuilder()
+    def ant = new groovy.util.AntBuilder()
