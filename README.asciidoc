@@ -72,6 +72,20 @@ As the sample project doesn't provide any unit tests, the `reports` directory wo
     ├── build.gradle
     └── src
 
+=== Page 124, Listing 5.9
+
+The syntax for declaring a custom Maven repository was incorrect. There should be no comma and closing parenthesis.
+
+----
+repositories {
+    mavenCentral()
+    maven {
+        name 'Custom Maven Repository'
+        url 'http://repository-gradle-in-action.forge.cloudbees.com/release/'
+    }
+}
+----
+
 === Page 155, first text paragraph
 
 ____
