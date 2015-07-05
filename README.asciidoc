@@ -110,6 +110,14 @@ ____
 As shown in listing 8.14, you need to extend the backing `Project` of the build script that applied the CloudBees plugin. Extension-aware objects expose the method `getExtensions()` that returns a container for registering extension models with a name.
 ____
 
+=== Page 215, third text paragraph
+
+____
+At that point of time extension, values haven’t been populated.
+____
+
+This sentence shouldn't have a comma.
+
 === Page 225, first code snippet
 
 The class `AntBuilder` is an abstract class and therefore cannot be instantiated. To create an instance of type `AntBuilder` from a regular class, you will need to use Groovy's `AntBuilder` implementation. Gradle's AntBuilder implementations aren't part of the public API. Using internal Gradle classes is not a recommended practice as the class or package might change with a later version of Gradle.
