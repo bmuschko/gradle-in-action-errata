@@ -47,28 +47,28 @@ As the sample project doesn't provide any unit tests, the `reports` directory wo
 
     .
     ├── build
-    │   ├── classes
-    │   │   └── main
-    │   │       └── com
-    │   │           └── manning
-    │   │               └── gia
-    │   │                   └── todo
-    │   │                       ├── ToDoApp.class
-    │   │                       ├── model
-    │   │                       │   └── ToDoItem.class
-    │   │                       ├── repository
-    │   │                       │   ├── InMemoryToDoRepository.class
-    │   │                       │   └── ToDoRepository.class
-    │   │                       └── utils
-    │   │                           ├── CommandLineInput.class
-    │   │                           ├── CommandLineInputHandler$1.class
-    │   │                           └── CommandLineInputHandler.class
-    │   ├── dependency-cache
-    │   ├── libs
-    │   │   └── todo-app.jar
-    │   └── tmp
-    │       └── jar
-    │           └── MANIFEST.MF
+    │   ├── classes
+    │   │   └── main
+    │   │       └── com
+    │   │           └── manning
+    │   │               └── gia
+    │   │                   └── todo
+    │   │                       ├── ToDoApp.class
+    │   │                       ├── model
+    │   │                       │   └── ToDoItem.class
+    │   │                       ├── repository
+    │   │                       │   ├── InMemoryToDoRepository.class
+    │   │                       │   └── ToDoRepository.class
+    │   │                       └── utils
+    │   │                           ├── CommandLineInput.class
+    │   │                           ├── CommandLineInputHandler$1.class
+    │   │                           └── CommandLineInputHandler.class
+    │   ├── dependency-cache
+    │   ├── libs
+    │   │   └── todo-app.jar
+    │   └── tmp
+    │       └── jar
+    │           └── MANIFEST.MF
     ├── build.gradle
     └── src
 
@@ -86,7 +86,7 @@ ____
 At the time of writing, you only need to implement one method: `graphPopulated(TaskExecutionGraph)`.
 ____
 
-=== Page 124, Listing 5.9
+=== Page 124, listing 5.9
 
 The syntax for declaring a custom Maven repository was incorrect. There should be no comma and closing parenthesis.
 
@@ -112,7 +112,7 @@ ____
 "In fact, it’s a build script itself that’s executed during the initialization phase of the build lifecycle."
 ____    
 
-=== Page 161, Figure 7.4
+=== Page 161, figure 7.4
 
 The first two task names of the graph (light blue boxes) are incorrect. They should be called `compileJava` and `processResources` instead of `compileTestJava` and `processTestResources`.
 
