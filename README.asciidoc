@@ -146,7 +146,7 @@ should be
 
     def ant = new groovy.util.AntBuilder()
     
-=== Page 356, figure 13.26 (Build pipeline view)
+=== Page 356, figure 13.26
 
 The image shows a different build number for each build step e.g. `#11 todo-initial`, `#4 todo-integ-tests`. However,
 with the proper configuration each build step should use the build number defined by the initial step of the pipeline e.g. `#11 todo-initial`, `#11 todo-integ-tests`.
