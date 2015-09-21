@@ -112,6 +112,10 @@ ____
 "In fact, it’s a build script itself that’s executed during the initialization phase of the build lifecycle."
 ____    
 
+=== Page 161, Figure 7.4
+
+The first two task names of the graph (light blue boxes) are incorrect. They should be called `compileJava` and `processResources` instead of `compileTestJava` and `processTestResources`.
+
 === Page 215, second text paragraph    
     
 ____
