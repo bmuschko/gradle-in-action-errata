@@ -116,6 +116,18 @@ ____
 
 The first two task names of the graph (light blue boxes) are incorrect. They should be called `compileJava` and `processResources` instead of `compileTestJava` and `processTestResources`.
 
+=== Page 191, chapter 8
+
+The plugin implementation described in chapter 8 relies on RUN@Cloud for deploying and hosting a web application. Unfortunately, Cloudbees decided to link:https://www.cloudbees.com/faq-customers-runcloud[decommission their service RUN@Cloud] on December 31, 2014. 
+
+What does this mean for readers of this chapter?
+
+- You cannot create an account on RUN@Cloud anymore as described in section 8.1.
+- The business logic implemented by the plugin described in chapter 8 will not work as is.
+- The Gradle concepts explained in chapter 8 are still highly relevant for Gradle plugin development and are applicable outside of the context used to demonstrate deployment and web application management functionality.
+
+If you want to follow along with the content and try to run the examples, I'd suggest you select a different PaaS provider with similar capabilities. I won't give any suggestions here as they might get easily outdated as well. A Google should provide you with same valid proviers. If you don't want to rely on an external provide, you could also rewrite the plugin such that it deploys the application to a local instance of Apache Tomcat by making calls to the Tomcat manager.
+
 === Page 215, second text paragraph    
     
 ____
