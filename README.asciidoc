@@ -160,24 +160,20 @@ should be
 
 === Page 231, first console output
 
-____
-$ gradle clean dist
-:init
-:compile
-:sourcesJar
-:dist
-____
+    $ gradle clean dist
+    :init
+    :compile
+    :sourcesJar
+    :dist
 
 should be
 
-____
-$ gradle clean dist
-:clean
-:init
-:compile
-:sourcesJar
-:dist
-____
+    $ gradle clean dist
+    :clean
+    :init
+    :compile
+    :sourcesJar
+    :dist
 
 === Page 356, figure 13.26
 
