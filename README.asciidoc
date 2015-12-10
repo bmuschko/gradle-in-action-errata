@@ -157,7 +157,28 @@ The class `AntBuilder` is an abstract class and therefore cannot be instantiated
 should be
 
     def ant = new groovy.util.AntBuilder()
-    
+
+=== Page 231, first console output
+
+____
+$ gradle clean dist
+:init
+:compile
+:sourcesJar
+:dist
+____
+
+should be
+
+____
+$ gradle clean dist
+:clean
+:init
+:compile
+:sourcesJar
+:dist
+____
+
 === Page 356, figure 13.26
 
 The image shows a different build number for each build step e.g. `#11 todo-initial`, `#4 todo-integ-tests`. However,
