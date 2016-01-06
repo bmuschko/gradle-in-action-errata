@@ -177,11 +177,15 @@ should be
 
 === Page 241, paragraph "Using the Maven2Gradle task"
 
+____
 Create a new directory, create a `pom.xml` file, and copy the contents of listing 9.11 into it.
+____
 
 should be
 
+____
 Create a new directory, create a `pom.xml` file, and copy the contents of listing 9.10 into it.
+____
 
 === Page 356, figure 13.26
 
