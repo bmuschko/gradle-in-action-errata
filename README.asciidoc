@@ -29,6 +29,20 @@ ____
 Give it a shot and try running `gradle groupTherapy --daemon`. Wow, you got your startup and execution time down to about one second! Subsequent invocations of the `gradle` command will need to declare the `--daemon` option explicitly. In practice you might want to configure the daemon with the help of a system properties to reuse an already started daemon process. For more information on the daemon's configuration, check out the online documentation at http://www.gradle.org/docs/current/userguide/build_environment.html#sec:gradle_configuration_properties. Keep in mind...
 ____
 
+=== Page 47, summary
+
+____
+We explored how running Gradle can be a huge timesaver if you have to
+continuously execute tasks, such as during test-driven development.
+____
+
+should be
+
+____
+We explored how running Gradle with the daemon can be a huge timesaver if you have to
+continuously execute tasks, such as during test-driven development.
+____
+
 === Page 56, text paragraph
 
 ____
