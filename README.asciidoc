@@ -201,6 +201,10 @@ ____
 Create a new directory, create a `pom.xml` file, and copy the contents of listing 9.10 into it.
 ____
 
+=== Page 294, figure 11.1
+
+The image doesn't properly render the `jshint` assignment. It should say `all: ['src/main/webapp/js/app/*.js']`. The title `Gruntfile.js` is partially cut off.
+
 === Page 356, figure 13.26
 
 The image shows a different build number for each build step e.g. `#11 todo-initial`, `#4 todo-integ-tests`. However,
