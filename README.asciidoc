@@ -209,3 +209,15 @@ The image doesn't properly render the `jshint` assignment. It should say `all: [
 
 The image shows a different build number for each build step e.g. `#11 todo-initial`, `#4 todo-integ-tests`. However,
 with the proper configuration each build step should use the build number defined by the initial step of the pipeline e.g. `#11 todo-initial`, `#11 todo-integ-tests`.
+
+=== Page 357, step 2: integration tests
+
+____
+As the build step, you want to trigger the execution of your integration tests. Add a build step for invoking your Gradle script using the wrapper and enter the task `databaseIntegrationTest`.
+____
+
+should be
+
+____
+As the build step, you want to trigger the execution of your integration tests. Add a build step for invoking your Gradle script using the wrapper and enter the task `integrationTest`.
+____
