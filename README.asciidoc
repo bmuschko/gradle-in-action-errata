@@ -142,8 +142,20 @@ What does this mean for readers of this chapter?
 
 If you want to follow along with the content and try to run the examples, I'd suggest you select a different PaaS provider with similar capabilities. I won't give any suggestions here as they might get easily outdated as well. A Google should provide you with same valid proviers. If you don't want to rely on an external provide, you could also rewrite the plugin such that it deploys the application to a local instance of Apache Tomcat by making calls to the Tomcat manager.
 
-=== Page 215, second text paragraph    
-    
+=== Page 214, call-out box
+
+____
+For more information on their characteristics, please see appendix B or the online documentation.
+____
+
+should be
+
+____
+For more information on their characteristics, please see the online documentation.
+____
+
+=== Page 215, second text paragraph
+
 ____
 As shown in listing 8.12, you need to extend the backing `Project` of the build script that applied the CloudBees plugin. Extension-aware objects expose the method `extensions()` that returns a container for registering extension models with a name.
 ____
