@@ -86,7 +86,7 @@ As the sample project doesn't provide any unit tests, the `reports` directory wo
     ├── build.gradle
     └── src
 
-=== Page 102, first sentence (starting on page 103)
+=== Page 102, first sentence (starting on page 101)
 
 Missing letter "d" in method name.
 
